@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王炳旭 · 个人主页</title>
+  <meta name="description" content="王炳旭的个人学术主页：国防科技大学计算机专业硕博连读，研究方向为多模态大模型与多模态规划。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ================= 顶部导航 ================= -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">王炳旭</a>
+      <button class="nav-toggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#research">研究方向</a></li>
+        <li><a href="#education">教育经历</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目与论文</a></li>
+        <li><a href="#contact">联系我</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ================= 首屏简介 ================= -->
+  <header id="home" class="hero">
+    <div class="container hero-inner">
+      <!-- 目前用姓氏首字做头像；想换成照片时，在 style.css 中给 .avatar 加 background-image 即可 -->
+      <div class="avatar" aria-hidden="true">王</div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">WANG BINGXU</p>
+        <h1>王炳旭</h1>
+        <p class="hero-affil">国防科技大学 · 计算机专业 · 硕博连读</p>
+        <p class="hero-bio">
+          关注多模态大模型与多模态规划，
+          希望让机器更好地理解并推理视觉与语言的世界。
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:641902161@qq.com">给我写信</a>
+          <a class="btn btn-ghost" href="https://github.com/wwbx1234" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= 研究方向 ================= -->
+    <section id="research" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">RESEARCH</span>
+          <h2>研究方向</h2>
+        </div>
+        <div class="research-grid">
+          <article class="research-card">
+            <span class="card-num">01</span>
+            <h3>多模态大模型</h3>
+            <p>研究视觉与语言信息的统一表征与融合机制，探索大规模多模态预训练模型在理解与生成任务上的能力边界。</p>
+          </article>
+          <article class="research-card">
+            <span class="card-num">02</span>
+            <h3>多模态规划</h3>
+            <p>面向复杂任务的视觉-语言协同规划，研究如何让模型基于多模态输入完成长程推理、任务分解与决策。</p>
+          </article>
+          <article class="research-card">
+            <span class="card-num">03</span>
+            <h3>高效学习与推理</h3>
+            <p>关注参数高效微调、模型压缩与高效推理方法，让大模型在有限算力资源下也能发挥价值。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 教育经历 ================= -->
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">EDUCATION</span>
+          <h2>教育经历</h2>
+        </div>
+        <ol class="timeline">
+          <li class="timeline-item">
+            <span class="timeline-date">2025.09 — 2031.06</span>
+            <div class="timeline-body">
+              <h3>国防科技大学 <small>硕博连读</small></h3>
+              <p>计算机专业 · 研究方向：多模态大模型</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <span class="timeline-date">2021.09 — 2025.06</span>
+            <div class="timeline-body">
+              <h3>国防科技大学 <small>本科</small></h3>
+              <p>计算机专业</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 技能 ================= -->
+    <!-- TODO: 按实际情况增删下面的技能标签 -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">SKILLS</span>
+          <h2>技能</h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>编程语言</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>MATLAB</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>深度学习</h3>
+            <ul class="chips">
+              <li>PyTorch</li>
+              <li>Transformers</li>
+              <li>OpenCV</li>
+              <li>CUDA</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>工具与工程</h3>
+            <ul class="chips">
+              <li>Linux</li>
+              <li>Git</li>
+              <li>LaTeX</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 项目与论文 ================= -->
+    <!-- 以后添加论文/项目时，复制下面的条目结构并取消注释即可：
+    <ul class="pub-list">
+      <li>
+        <span class="pub-tag pub-tag-paper">论文</span>
+        <div class="pub-body">
+          <h3>论文标题</h3>
+          <p>王炳旭, 等. 会议 / 期刊名称, 20XX.</p>
+          <p class="pub-links"><a href="#">PDF</a> · <a href="#">代码</a></p>
+        </div>
+      </li>
+      <li>
+        <span class="pub-tag pub-tag-project">项目</span>
+        <div class="pub-body">
+          <h3>项目名称</h3>
+          <p>一句话说明项目内容、你的角色与取得的结果。</p>
+        </div>
+      </li>
+    </ul>
+    -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">PROJECTS &amp; PUBLICATIONS</span>
+          <h2>项目与论文</h2>
+        </div>
+        <p class="section-note">论文与项目正在整理中，敬请期待。</p>
+      </div>
+    </section>
+
+    <!-- ================= 联系方式 ================= -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">CONTACT</span>
+          <h2>联系我</h2>
+        </div>
+        <p class="contact-bio">
+          如果你对我的研究方向感兴趣，或希望进一步交流，欢迎通过以下方式联系我。
+        </p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">邮箱</span>
+            <a href="mailto:641902161@qq.com">641902161@qq.com</a>
+          </li>
+          <li>
+            <span class="contact-label">GitHub</span>
+            <a href="https://github.com/wwbx1234" target="_blank" rel="noopener">github.com/wwbx1234</a>
+          </li>
+          <li>
+            <span class="contact-label">坐标</span>
+            湖南 · 长沙
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= 页脚 ================= -->
+  <footer>
+    <p>© <span id="year">2026</span> 王炳旭 · 国防科技大学</p>
+    <p class="footer-note">本站由 GitHub Pages 托管</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
